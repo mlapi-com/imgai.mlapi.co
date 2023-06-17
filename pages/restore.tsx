@@ -213,7 +213,7 @@ const Home: NextPage = () => {
           </AnimatePresence>
         </ResizablePanel>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
