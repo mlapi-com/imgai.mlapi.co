@@ -36,7 +36,7 @@ const options = {
     }
     return isSafe
       ? undefined
-      : "Detected a NSFW image which is not allowed. If this was a mistake, please contact me at hassan@hey.com";
+      : "Detected a NSFW image which is not allowed. If this was a mistake, please contact me at rahul@mlapi.co";
   },
 };
 
@@ -94,7 +94,7 @@ const Home: NextPage = () => {
 
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-4 sm:mb-0 mb-8">
-        <a
+        {/* <a
           href="https://youtu.be/FRQtFDDrUXQ"
           target="_blank"
           rel="noreferrer"
@@ -102,14 +102,14 @@ const Home: NextPage = () => {
         >
           Are you a developer and want to learn how I built this? Watch the{" "}
           <span className="font-bold">YouTube tutorial</span>.
-        </a>
+        </a> */}
         <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl mb-5">
-          Restore any face photo
+          Free AI img Processing
         </h1>
         <p className="text-slate-500">
           {" "}
           {/* Obtained this number from Vercel: based on how many serverless invocations happened. */}
-          <CountUp start={100000} end={325321} duration={2} separator="," />{" "}
+          <CountUp start={10} end={12090} duration={2} separator="," />{" "}
           photos generated and counting.
         </p>
         <ResizablePanel>
