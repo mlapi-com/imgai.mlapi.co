@@ -51,24 +51,24 @@ const Home: NextPage = () => {
         </h1>
 
         <p className="mx-auto mt-12 max-w-xl text-lg text-slate-700 leading-7">
-          Have old and blurry face photos? Let our AI restore them so those
-          memories can live on. 100% free – restore your photos today.
+          Elevate your visuals effortlessly. Unleash the artistry within. 
+          Transform images with a few clicks.
         </p>
         <div className="flex justify-center space-x-4">
-          <a
+          {/* <a
             className="bg-white rounded-xl text-black font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-gray-100 border"
             href="https://youtu.be/FRQtFDDrUXQ"
             target="_blank"
             rel="noreferrer"
           >
             Learn how it's built
-          </a>
+          </a> */}
 
           <Link
-            className="bg-black rounded-xl text-white font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-black/80"
+            className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
             href="/restore"
           >
-            Restore your photos
+            Process Your Images
           </Link>
         </div>
         <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
