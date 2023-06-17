@@ -68,23 +68,23 @@ const Home: NextPage = () => {
             className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
             href="/restore"
           >
-            Process Your Images
+            Get started for Free
           </Link>
         </div>
         <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
           <div className="flex flex-col space-y-10 mt-4 mb-16">
             <div className="flex sm:space-x-2 sm:flex-row flex-col">
               <div>
-                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                {/* <h2 className="mb-1 font-medium text-lg">Original Photo</h2> */}
                 <Image
                   alt="Original photo of my bro"
-                  src="/michael.jpg"
-                  className="w-96 h-96 rounded-2xl"
-                  width={400}
-                  height={400}
+                  src="/silueta.png"
+                  className=" rounded-2xl"
+                  width={800}
+                  height={800}
                 />
               </div>
-              <div className="sm:mt-0 mt-8">
+              {/* <div className="sm:mt-0 mt-8">
                 <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
                 <Image
                   alt="Restored photo of my bro"
@@ -93,13 +93,13 @@ const Home: NextPage = () => {
                   src="/michael-new.jpg"
                   className="w-96 h-96 rounded-2xl sm:mt-0 mt-2"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </main>
-      <Testimonials />
-      <Footer />
+      {/* <Testimonials /> */}
+      {/* <Footer /> */}
     </div>
   );
 };
