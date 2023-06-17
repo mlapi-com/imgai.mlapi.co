@@ -181,7 +181,7 @@ const Home: NextPage = () => {
                   <span className="block sm:inline">{error}</span>
                 </div>
               )}
-              <div className="flex space-x-2 justify-center">
+              <div className="flex space-x-2 justify-center mb-10">
                 {originalPhoto && !loading && (
                   <button
                     onClick={() => {
@@ -213,7 +213,7 @@ const Home: NextPage = () => {
           </AnimatePresence>
         </ResizablePanel>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
