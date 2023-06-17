@@ -68,7 +68,7 @@ const Home: NextPage = () => {
             className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
             href="/restore"
           >
-            Process Your Images
+            Get started for Free
           </Link>
         </div>
         <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
@@ -98,8 +98,8 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
-      <Testimonials />
-      <Footer />
+      {/* <Testimonials /> */}
+      {/* <Footer /> */}
     </div>
   );
 };
