@@ -83,8 +83,15 @@ const Home: NextPage = () => {
                   height={600}
                 /> */}
 
-                <video className="lozad max-w-full rounded-2xl" data-poster="https://online.hitpaw.com/images/online-tools-land/photo-enhancer/losing.png" autoPlay muted loop webkit-playsinline playsInline poster="https://online.hitpaw.com/images/online-tools-land/photo-enhancer/losing.png" data-loaded="true">
-                  <source data-src="https://online.hitpaw.com/videos/photo-enhancer/losing.mp4" type="video/mp4" src="https://online.hitpaw.com/videos/photo-enhancer/losing.mp4"/>
+                <video 
+                  className="lozad w-full rounded-2xl" 
+                  data-poster="https://online.hitpaw.com/images/online-tools-land/photo-enhancer/losing.png" 
+                  autoPlay muted loop webkit-playsinline playsInline 
+                  poster="https://online.hitpaw.com/images/online-tools-land/photo-enhancer/losing.png" 
+                  data-loaded="true">
+                    <source data-src="https://online.hitpaw.com/videos/photo-enhancer/losing.mp4" type="video/mp4" src="https://online.hitpaw.com/videos/photo-enhancer/losing.mp4"/>
+                  width={600}
+                  height={600}
                 </video>
               </div>
               {/* <div className="sm:mt-0 mt-8">
