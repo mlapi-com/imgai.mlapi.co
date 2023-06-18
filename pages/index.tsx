@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
 import { Testimonials } from "../components/Testimonials";
+import Tools from "../components/Tools";
 
 const Home: NextPage = () => {
   return (
@@ -36,7 +37,7 @@ const Home: NextPage = () => {
           </svg>
           </div>
           <p className="text-sm font-semibold text-[#1d9bf0]">
-            Introducing PicWish
+            Introducing imgai
           </p>
         </a>
         <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-slate-900 sm:text-7xl">
@@ -56,18 +57,20 @@ const Home: NextPage = () => {
         </p>
         <div className="flex justify-center space-x-4">
           
-          <Link
-            className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-blue-500 border-2 duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
-            href="/"
-          >
-            Contact Us
-          </Link>
+          
 
           <Link
             className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
             href="/processing"
           >
             Enhance Now
+          </Link>
+
+          <Link
+            className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-blue-500 border-2 duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
+            href="#Tools"
+          >
+            Explore all Tools
           </Link>
         </div>
         <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
@@ -84,14 +87,12 @@ const Home: NextPage = () => {
                 /> */}
 
                 <video 
-                  className="lozad w-full rounded-2xl" 
+                  className="lozad rounded-2xl min-w-full h-auto" 
                   data-poster="https://online.hitpaw.com/images/online-tools-land/photo-enhancer/losing.png" 
                   autoPlay muted loop webkit-playsinline playsInline 
                   poster="https://online.hitpaw.com/images/online-tools-land/photo-enhancer/losing.png" 
                   data-loaded="true">
                     <source data-src="https://online.hitpaw.com/videos/photo-enhancer/losing.mp4" type="video/mp4" src="https://online.hitpaw.com/videos/photo-enhancer/losing.mp4"/>
-                  width={600}
-                  height={600}
                 </video>
               </div>
               {/* <div className="sm:mt-0 mt-8">
@@ -108,6 +109,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
+      <Tools />
       {/* <Testimonials /> */}
       {/* <Footer /> */}
     </div>
