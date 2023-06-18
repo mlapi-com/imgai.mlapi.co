@@ -72,7 +72,6 @@ class ErrorBoundary extends React.Component {
     }
 
     // Render children if there's no error
-    return this.props.children;
   }
 }
 
