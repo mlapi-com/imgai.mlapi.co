@@ -30,6 +30,10 @@ class MyDocument extends Document {
             name="twitter:image"
             content="https://restore-photos.vercel.app/og-image.png"
           />
+
+          {/* For Tally: https://tally.so/forms/mDKWKE/share */}
+          <script async src="https://tally.so/widgets/embed.js"></script>
+
         </Head>
         <body>
           <Main />

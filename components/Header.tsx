@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
@@ -64,22 +63,28 @@ export default function Header() {
             >
               Tools
             </a>
+            
             <a
               className="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400"
-              href="/faq"
+              href="/blogs"
             >
-              API
+              Blogs
             </a>
+            
             <a
               className="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400"
-              href="/#pricing"
+              href="/changlog"
             >
-              Pricing
+              Changlog
             </a>
+
+
             <div className="inline-flex items-center gap-2 list-none lg:ml-auto">
               <a
-                href="/"
+                
                 className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-black bg-slate-200 rounded-lg group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-slate-50 active:bg-slate-200 active:text-accent-400 focus-visible:outline-black"
+                data-tally-open="mDKWKE" data-tally-layout="modal" data-tally-align-left="1" data-tally-width="450"
+                data-tally-hide-title="1" data-tally-emoji-text="👋" data-tally-emoji-animation="head-shake" data-tally-auto-close="1000"
               >
                 Contact Us
               </a>

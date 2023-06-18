@@ -8,7 +8,6 @@ import SquigglyLines from "../components/SquigglyLines";
 
 const Tools = lazy(() => import('../components/Tools'));
 
-// import Tools from "../components/Tools";
 // import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 
 
