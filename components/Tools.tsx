@@ -10,7 +10,7 @@ export default function Tools(){
                     <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl flex items-center justify-center">
                         Tools
                     </h1>
-                    <div className="flex items-center justify-center mt-10 sm:flex-row flex-col ml-10">
+                    <div className="flex items-center justify-center mt-10 sm:flex-row flex-col ml-5">
                         
                         
                         <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700">
@@ -37,7 +37,7 @@ export default function Tools(){
 
                     </div>
 
-                    <div className="flex items-center justify-center mt-10 sm:flex-row flex-col ml-10">
+                    <div className="flex items-center justify-center mt-10 sm:flex-row flex-col ml-5">
                         
                         
                         <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700">
