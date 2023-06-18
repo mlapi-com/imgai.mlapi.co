@@ -41,7 +41,7 @@ const Home: NextPage = () => {
             />
           </svg>
           </div>
-          <p className="text-sm font-semibold text-[#1d9bf0]">
+          <p className="text-sm font-semibold text-[#27a7fc]">
             Introducing imgai
           </p>
         </a>
