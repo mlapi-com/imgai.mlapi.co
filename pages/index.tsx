@@ -1,13 +1,16 @@
+import React, { lazy } from 'react';
+
 import { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
-import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
-import { Testimonials } from "../components/Testimonials";
-import Tools from "../components/Tools";
-import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+
+const Tools = lazy(() => import('../components/Tools'));
+
+// import Tools from "../components/Tools";
+// import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+
 
 
 const Home: NextPage = () => {
@@ -119,8 +122,6 @@ const Home: NextPage = () => {
         </div>
       </main>
       <Tools />
-      {/* <Testimonials /> */}
-      {/* <Footer /> */}
     </div>
   );
 };
