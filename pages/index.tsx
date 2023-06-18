@@ -55,20 +55,19 @@ const Home: NextPage = () => {
           Transform images with a few clicks.
         </p>
         <div className="flex justify-center space-x-4">
-          {/* <a
-            className="bg-white rounded-xl text-black font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-gray-100 border"
-            href="https://youtu.be/FRQtFDDrUXQ"
-            target="_blank"
-            rel="noreferrer"
+          
+          <Link
+            className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-blue-500 border-2 duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
+            href="/"
           >
-            Learn how it's built
-          </a> */}
+            Contact Us
+          </Link>
 
           <Link
             className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
             href="/processing"
           >
-            Get started for Free
+            Enhance Now
           </Link>
         </div>
         <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
@@ -78,7 +77,7 @@ const Home: NextPage = () => {
                 {/* <h2 className="mb-1 font-medium text-lg">Original Photo</h2> */}
                 <Image
                   alt="Original photo of my bro"
-                  src="/silueta.png"
+                  src="/toubu.png"
                   className=" rounded-2xl"
                   width={800}
                   height={800}
