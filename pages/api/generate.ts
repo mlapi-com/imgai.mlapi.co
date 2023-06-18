@@ -7,6 +7,7 @@ type Data = string;
 interface ExtendedNextApiRequest extends NextApiRequest {
   body: {
     imageUrl: string;
+    verionText: string;
   };
 }
 
@@ -39,8 +40,9 @@ export default async function handler(
     }
   }
 
-  const imageUrl = req.body.imageUrl;
+  const { imageUrl, verionText } = req.body;
   console.log("Image URL is :", imageUrl);
+  console.log("Verion Text is :", verionText);
   // POST request to Replicate to start the image restoration generation process
   let startResponse = await fetch("https://api.replicate.com/v1/predictions", {
     method: "POST",
@@ -49,8 +51,7 @@ export default async function handler(
       Authorization: "Token " + process.env.REPLICATE_API_KEY,
     },
     body: JSON.stringify({
-      version:
-        "42fed1c4974146d4d2414e2be2c5277c7fcf05fcc3a73abf41610695738c1d7b",
+      version: verionText,
       
       input: { image: imageUrl},
     }),

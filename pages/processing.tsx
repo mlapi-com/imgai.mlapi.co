@@ -73,7 +73,9 @@ const Home: NextPage = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ imageUrl: fileUrl}),
+      body: JSON.stringify({ 
+        imageUrl: fileUrl,
+        verionText: '42fed1c4974146d4d2414e2be2c5277c7fcf05fcc3a73abf41610695738c1d7b'}),
     });
 
     let newPhoto = await res.json();
