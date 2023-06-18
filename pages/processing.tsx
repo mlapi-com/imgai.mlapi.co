@@ -15,6 +15,7 @@ import Toggle from "../components/Toggle";
 import appendNewToName from "../utils/appendNewToName";
 import downloadPhoto from "../utils/downloadPhoto";
 import NSFWPredictor from "../utils/nsfwCheck";
+import React from "react";
 
 // Configuration for the uploader
 const uploader = Uploader({
@@ -39,6 +40,41 @@ const options = {
       : "Detected a NSFW image which is not allowed. If this was a mistake, please contact me at rahul@mlapi.co";
   },
 };
+
+// https://chat.openai.com/share/8ca5f82e-ac3b-4d49-8b19-e7563289a702
+// https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary
+// https://nextjs.org/docs/messages/client-side-exception-occurred
+
+// Error boundary component
+class ErrorBoundary extends React.Component {
+  state = {
+    hasError: false,
+    error: null,
+  };
+
+  static getDerivedStateFromError(error: any) {
+    // Update state to display the fallback UI
+    return {
+      hasError: true,
+      error,
+    };
+  }
+
+  componentDidCatch(error: any, errorInfo: any) {
+    // You can also log the error to an error reporting service
+    console.error("Error caught in error boundary:", error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      // Render fallback UI
+      return <h1>Something went wrong. Please Try again</h1>;
+    }
+
+    // Render children if there's no error
+    return this.props.children;
+  }
+}
 
 const Home: NextPage = () => {
   const [originalPhoto, setOriginalPhoto] = useState<string | null>(null);
@@ -151,7 +187,7 @@ const Home: NextPage = () => {
                     />
                   </div>
                   <div className="sm:mt-0 mt-8">
-                    <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+                    <h2 className="mb-1 font-medium text-lg">Enhanced Photo</h2>
                     <a href={restoredImage} target="_blank" rel="noreferrer">
                       <Image
                         alt="restored photo"
@@ -220,4 +256,12 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+// Wrap the Home component with the ErrorBoundary
+const HomeWithBoundary = () => (
+  <ErrorBoundary>
+    <Home />
+  </ErrorBoundary>
+);
+
+export default HomeWithBoundary;
+
