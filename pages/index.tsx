@@ -48,7 +48,7 @@ const Home: NextPage = () => {
           
         <span className="relative whitespace-nowrap text-[#3290EE]">
             <SquigglyLines />
-            <span className="relative">Free AI Powered</span>
+            <span className="relative mr-2">Free AI Powered</span>
             <br></br>
           </span>{" "}
           image Processing Tools{" "}
@@ -98,7 +98,7 @@ const Home: NextPage = () => {
                 /> */}
 
                 <video 
-                  className="lozad rounded-2xl min-w-full h-auto" 
+                  className="lozad rounded-2xl min-w-full h-auto flex justify-center items-center" 
                   data-poster="https://online.hitpaw.com/images/online-tools-land/photo-enhancer/losing.png" 
                   autoPlay muted loop webkit-playsinline playsInline 
                   poster="https://online.hitpaw.com/images/online-tools-land/photo-enhancer/losing.png" 
