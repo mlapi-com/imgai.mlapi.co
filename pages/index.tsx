@@ -77,10 +77,10 @@ const Home: NextPage = () => {
                 {/* <h2 className="mb-1 font-medium text-lg">Original Photo</h2> */}
                 <Image
                   alt="Original photo of my bro"
-                  src="/toubu.png"
-                  className=" rounded-2xl"
+                  src="/enhance.png"
+                  className="rounded-2xl relative"
                   width={800}
-                  height={800}
+                  height={600}
                 />
               </div>
               {/* <div className="sm:mt-0 mt-8">
