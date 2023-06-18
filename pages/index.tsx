@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         </a>
         <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-slate-900 sm:text-7xl">
           
-        <span className="relative whitespace-nowrap text-[#3290EE]">
+        <span className="relative whitespace-nowrap text-[rgb(50,144,238)]">
             <SquigglyLines />
             <span className="relative">Free AI Powered</span>
             <br></br>
@@ -54,22 +54,30 @@ const Home: NextPage = () => {
           Elevate your visuals effortlessly. Unleash the artistry within. 
           Transform images with a few clicks.
         </p>
+
+
         <div className="flex justify-center space-x-4">
           {/* <a
-            className="bg-white rounded-xl text-black font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-gray-100 border"
-            href="https://youtu.be/FRQtFDDrUXQ"
-            target="_blank"
-            rel="noreferrer"
+            className="bg-white rounded-xl text-black font-medium px-6 py-3 sm:mt-7 mt-7 hover:bg-gray-100 border-2"
+            href="/"
           >
-            Learn how it's built
+            Contact Us
           </a> */}
 
           <Link
-            className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
+            className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-blue-500 border-2 duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
             href="/processing"
           >
-            Get started for Free
+            Contact Us
           </Link>
+
+          <Link
+            className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
+            href="/"
+          >
+            Explore All Tools
+          </Link>
+
         </div>
         <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
           <div className="flex flex-col space-y-10 mt-4 mb-16">
@@ -78,7 +86,7 @@ const Home: NextPage = () => {
                 {/* <h2 className="mb-1 font-medium text-lg">Original Photo</h2> */}
                 <Image
                   alt="Original photo of my bro"
-                  src="/silueta.png"
+                  src="/toubu.png"
                   className=" rounded-2xl"
                   width={800}
                   height={800}
