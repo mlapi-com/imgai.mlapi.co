@@ -37,7 +37,7 @@ const options = {
     }
     return isSafe
       ? undefined
-      : "Detected a NSFW image which is not allowed. If this was a mistake, please contact me at rahul@mlapi.co";
+      : "Detected a NSFW image which is not allowed. If this was a mistake, please contact me at rahul@imgai.co";
   },
 };
 
