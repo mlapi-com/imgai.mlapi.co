@@ -75,13 +75,17 @@ const Home: NextPage = () => {
             <div className="flex sm:space-x-2 sm:flex-row flex-col">
               <div>
                 {/* <h2 className="mb-1 font-medium text-lg">Original Photo</h2> */}
-                <Image
+                {/* <Image
                   alt="Original photo of my bro"
                   src="https://online.hitpaw.com/videos/photo-enhancer/toubu.png"
                   className="rounded-2xl relative"
                   width={800}
                   height={600}
-                />
+                /> */}
+
+                <video className="lozad max-w-full rounded-2xl" data-poster="https://online.hitpaw.com/images/online-tools-land/photo-enhancer/losing.png" autoPlay muted loop webkit-playsinline playsInline poster="https://online.hitpaw.com/images/online-tools-land/photo-enhancer/losing.png" data-loaded="true">
+                  <source data-src="https://online.hitpaw.com/videos/photo-enhancer/losing.mp4" type="video/mp4" src="https://online.hitpaw.com/videos/photo-enhancer/losing.mp4"/>
+                </video>
               </div>
               {/* <div className="sm:mt-0 mt-8">
                 <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
