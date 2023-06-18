@@ -7,6 +7,8 @@ import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
 import { Testimonials } from "../components/Testimonials";
 import Tools from "../components/Tools";
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+
 
 const Home: NextPage = () => {
   return (
@@ -55,7 +57,7 @@ const Home: NextPage = () => {
           Elevate your visuals effortlessly. Unleash the artistry within. 
           Transform images with a few clicks.
         </p>
-        <div className="flex justify-center space-x-4">
+        <div className="flex justify-center space-x-4 sm:ml-5 ml-5">
           
           
 
@@ -77,6 +79,13 @@ const Home: NextPage = () => {
           <div className="flex flex-col space-y-10 mt-4 mb-16">
             <div className="flex sm:space-x-2 sm:flex-row flex-col">
               <div>
+
+              <ReactCompareSlider
+                itemOne={<ReactCompareSliderImage src="/oldman.jpg"  alt="Image one" />}
+                itemTwo={<ReactCompareSliderImage src="/oldman-new.jpg"  alt="Image two" />}
+                className="flex sm:w-[600px] mt-5 rounded-3xl sm:ml-5 ml-5"
+              />
+
                 {/* <h2 className="mb-1 font-medium text-lg">Original Photo</h2> */}
                 {/* <Image
                   alt="Original photo of my bro"
@@ -86,14 +95,14 @@ const Home: NextPage = () => {
                   height={600}
                 /> */}
 
-                <video 
+                {/* <video 
                   className="lozad rounded-2xl min-w-full h-auto" 
                   data-poster="https://online.hitpaw.com/images/online-tools-land/photo-enhancer/losing.png" 
                   autoPlay muted loop webkit-playsinline playsInline 
                   poster="https://online.hitpaw.com/images/online-tools-land/photo-enhancer/losing.png" 
                   data-loaded="true">
                     <source data-src="https://online.hitpaw.com/videos/photo-enhancer/losing.mp4" type="video/mp4" src="https://online.hitpaw.com/videos/photo-enhancer/losing.mp4"/>
-                </video>
+                </video> */}
               </div>
               {/* <div className="sm:mt-0 mt-8">
                 <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
