@@ -3,13 +3,13 @@ import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import Link from "next/link";
-import Processing from "../components/Processing"
+import  ProcessingImg  from '../components/ProcessingImg';
 
 export default function ImgEnhancement(){
     return (
         <div className="flex mx-auto flex-col items-center justify-center py-2 min-h-screen">
             <Head>
-            <title>Background Removal | imgai</title>
+            <title>Restore Photos | imgai</title>
             <link rel="icon" href="/favicon.ico" />
             </Head>
     
@@ -20,15 +20,15 @@ export default function ImgEnhancement(){
             <div>
 
             <h1 className="mb-4 text-3xl font-extrabold text-gray-900 sm:mt-40 mt-10 md:text-5xl lg:text-6xl">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Background Removal</span> Free to use.</h1>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r bg-yellow-400 from-sky-400">Restore Old Photos</span> Free to use.</h1>
 
-                <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Extract the main object from a picture with incredible accuracy.</p>
+                <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Restore your old photos, relive those memories again.</p>
 
                 <Link
                     className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
-                    href="/bg-remove/#processing"
+                    href="/restore-old/#processing"
                 >
-                    Remove Bg
+                    Restore Photos
                 </Link>
 
                 <Link
@@ -41,15 +41,19 @@ export default function ImgEnhancement(){
                 </Link>
 
             </div>
-                <ReactCompareSlider
-                    itemOne={<ReactCompareSliderImage src="https://ik.imagekit.io/uti9laa1e/silueta-old.png?updatedAt=1687143049795"  alt="Image one" />}
-                    itemTwo={<ReactCompareSliderImage src="https://ik.imagekit.io/uti9laa1e/silueta.png?updatedAt=1687143049643"  alt="Image two" />}
-                    className="flex sm:w-[600px] h-[400px] rounded-3xl sm:mt-20 mt-10 "
-              /> 
 
+                <ReactCompareSlider
+                     itemOne={<ReactCompareSliderImage src="/michael.jpg"  alt="Image one" />}
+                     itemTwo={<ReactCompareSliderImage src="/michael-new.jpg"  alt="Image two" />}
+                    className="flex sm:w-[600px] h-[400px] rounded-3xl sm:mt-20 mt-10 "
+                />
+
+            
             </main>
 
-            <Processing versionID="fb8af171cfa1616ddcf1242c093f9c46bcada5ad4cf6f2fbe8b81b330ec5c003" processingText="Background Removed"/>
+            <ProcessingImg versionID="9283608cc6b7be6b65a8e44983db012355fde4132009bf99d976b2f0896856a3" processingText='Restored'/>
+
+            
         </div>
     )
 } 
