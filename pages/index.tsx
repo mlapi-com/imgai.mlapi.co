@@ -8,7 +8,7 @@ import SquigglyLines from "../components/SquigglyLines";
 
 const Tools = lazy(() => import('../components/Tools'));
 
-// import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 
 
 
@@ -65,9 +65,9 @@ const Home: NextPage = () => {
 
           <Link
             className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
-            href="/img-enhancement/#processing"
+            href="/restore-old#processing"
           >
-            Enhance Now
+            Restore Photos
           </Link>
 
           <Link
@@ -82,11 +82,11 @@ const Home: NextPage = () => {
             <div className="flex sm:space-x-2 sm:flex-row flex-col">
               <div>
 
-              {/* <ReactCompareSlider
-                itemOne={<ReactCompareSliderImage src="/oldman.jpg"  alt="Image one" />}
-                itemTwo={<ReactCompareSliderImage src="/oldman-new.jpg"  alt="Image two" />}
+              <ReactCompareSlider
+                itemOne={<ReactCompareSliderImage src="https://ik.imagekit.io/uti9laa1e/bg-removal-updated-old_QW2tI8Fti?updatedAt=1687183567207"  alt="Image one" />}
+                itemTwo={<ReactCompareSliderImage src="https://ik.imagekit.io/uti9laa1e/bg-removal-updated-new_c6AqAKAkuO?updatedAt=1687183627404"  alt="Image two" />}
                 className="flex sm:w-[600px] mt-5 rounded-3xl sm:ml-5 ml-5"
-              /> */}
+              />
 
                 {/* <h2 className="mb-1 font-medium text-lg">Original Photo</h2> */}
                 {/* <Image
@@ -97,14 +97,15 @@ const Home: NextPage = () => {
                   height={600}
                 /> */}
 
-                <video 
+                {/* <video 
                   className="lozad rounded-2xl min-w-full h-auto flex justify-center items-center" 
                   data-poster="https://online.hitpaw.com/images/online-tools-land/photo-enhancer/losing.png" 
                   autoPlay muted loop webkit-playsinline playsInline 
                   poster="https://online.hitpaw.com/images/online-tools-land/photo-enhancer/losing.png" 
                   data-loaded="true">
                     <source data-src="https://online.hitpaw.com/videos/photo-enhancer/losing.mp4" type="video/mp4" src="https://online.hitpaw.com/videos/photo-enhancer/losing.mp4"/>
-                </video>
+                </video> */}
+                
               </div>
               {/* <div className="sm:mt-0 mt-8">
                 <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
