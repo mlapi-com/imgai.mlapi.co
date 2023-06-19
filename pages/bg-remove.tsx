@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import Link from "next/link";
+import Processing from "../components/Processing"
 
 export default function ImgEnhancement(){
     return (
@@ -25,7 +26,7 @@ export default function ImgEnhancement(){
 
                 <Link
                     className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
-                    href="/processing"
+                    href="/bg-remove/#processing"
                 >
                     Remove Bg
                 </Link>
@@ -47,6 +48,8 @@ export default function ImgEnhancement(){
               /> 
 
             </main>
+
+            <Processing versionID="fb8af171cfa1616ddcf1242c093f9c46bcada5ad4cf6f2fbe8b81b330ec5c003" processingText="Background Removed"/>
         </div>
     )
 } 

@@ -7,8 +7,6 @@ import CountUp from "react-countup";
 import { UploadDropzone } from "react-uploader";
 import { Uploader } from "uploader";
 import { CompareSlider } from "./CompareSlider";
-import Footer from "./Footer";
-import Header from "./Header";
 import ResizablePanel from "./ResizablePanel";
 import Toggle from "./Toggle";
 import appendNewToName from "../utils/appendNewToName";
@@ -43,7 +41,13 @@ const options = {
 //   },
 };
 
-const Home: NextPage = () => {
+// To take user inputs
+interface HomeProps {
+    versionID: string;
+    processingText: string;
+  }
+
+const Home: React.FC<HomeProps> = ({ versionID, processingText }) => {
   const [originalPhoto, setOriginalPhoto] = useState<string | null>(null);
   const [restoredImage, setRestoredImage] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
@@ -78,7 +82,7 @@ const Home: NextPage = () => {
       },
       body: JSON.stringify({ 
         imageUrl: fileUrl,
-        verionText: '42fed1c4974146d4d2414e2be2c5277c7fcf05fcc3a73abf41610695738c1d7b'}),
+        verionText: versionID }),
     });
 
     let newPhoto = await res.json();
@@ -91,9 +95,9 @@ const Home: NextPage = () => {
   }
 
   return (
-    <div className="flex w-full mx-auto flex-col items-center justify-center min-h-screen">
+    <div className="flex w-full mx-auto  sm:mt-20 mt-10">
 
-      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mb-0 mb-8"
+      <main className="flex flex-1 w-full text-center"
       id="processing">
         
         <ResizablePanel>
@@ -123,7 +127,7 @@ const Home: NextPage = () => {
               {restoredImage && originalPhoto && !sideBySide && (
                 <div className="flex sm:space-x-4 sm:flex-row flex-col">
                   <div>
-                    <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                    <h2 className="mb-1 font-medium text-lg sm:mt-5 mt-10">Original Photo</h2>
                     <Image
                       alt="original photo"
                       src={originalPhoto}
@@ -133,7 +137,7 @@ const Home: NextPage = () => {
                     />
                   </div>
                   <div className="sm:mt-0 mt-8">
-                    <h2 className="mb-1 font-medium text-lg">Enhance Photo</h2>
+                    <h2 className="mb-1 font-medium text-lg sm:mt-5 mt-10">{processingText} Photo</h2>
                     <a href={restoredImage} target="_blank" rel="noreferrer">
                       <Image
                         alt="restored photo"
@@ -189,7 +193,7 @@ const Home: NextPage = () => {
                     }}
                     className="bg-white rounded-full text-black border font-medium px-4 py-2 mt-8 hover:bg-gray-100 transition"
                   >
-                    Download Restored Photo
+                    Download {processingText} Photo
                   </button>
                 )}
               </div>
@@ -197,7 +201,6 @@ const Home: NextPage = () => {
           </AnimatePresence>
         </ResizablePanel>
       </main>
-      {/* <Footer /> */}
     </div>
   );
 };

@@ -22,7 +22,7 @@ export default function ImgEnhancement(){
             <h1 className="mb-4 text-3xl font-extrabold text-gray-900 sm:mt-40 mt-10 md:text-5xl lg:text-6xl">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Image Enhacement</span> Free to use.</h1>
 
-                <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Enhancement your image upto 4x or 8x in seconds, <br/> also enhance low light images</p>
+                <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Enhancement your image upto 4x or 8x in seconds.</p>
 
                 <Link
                     className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
@@ -53,7 +53,13 @@ export default function ImgEnhancement(){
 
             </main>
 
-            <Processing />
+            <Processing versionID="42fed1c4974146d4d2414e2be2c5277c7fcf05fcc3a73abf41610695738c1d7b" processingText='Enhanced'/>
+
+            <div>
+                <p>
+                    Hello
+                </p>
+            </div>
         </div>
     )
 } 
