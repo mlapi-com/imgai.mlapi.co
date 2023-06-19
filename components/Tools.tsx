@@ -40,7 +40,7 @@ export default function Tools(){
                     <div className="flex items-center justify-center mt-10 sm:flex-row flex-col sm:ml-5 ml-5">
                         
                         
-                        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 sm:ml-10 sm:mt-0 mt-10">
+                        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 ">
                             <a>
                                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 ">Restore Old photos</h5>
                             </a>
@@ -51,7 +51,7 @@ export default function Tools(){
                             </a>
                         </div>
 
-                        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700">
+                        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 sm:ml-10 sm:mt-0 mt-10">
                             <a>
                                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 ">Object Removal</h5>
                             </a>
