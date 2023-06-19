@@ -43,8 +43,8 @@ export default function ImgEnhancement(){
             </div>
 
                 <ReactCompareSlider
-                     itemOne={<ReactCompareSliderImage src="/michael.jpg"  alt="Image one" />}
-                     itemTwo={<ReactCompareSliderImage src="/michael-new.jpg"  alt="Image two" />}
+                     itemOne={<ReactCompareSliderImage src="https://ik.imagekit.io/uti9laa1e/michael.jpg?updatedAt=1687206356232"  alt="Image one" />}
+                     itemTwo={<ReactCompareSliderImage src="https://ik.imagekit.io/uti9laa1e/michael-new.jpg?updatedAt=1687206356474"  alt="Image two" />}
                     className="flex sm:w-[600px] h-[400px] rounded-3xl sm:mt-20 mt-10 "
                 />
 

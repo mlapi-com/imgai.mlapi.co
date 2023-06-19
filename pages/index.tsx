@@ -85,7 +85,7 @@ const Home: NextPage = () => {
               <ReactCompareSlider
                 itemOne={<ReactCompareSliderImage src="https://ik.imagekit.io/uti9laa1e/bg-removal-updated-old_QW2tI8Fti?updatedAt=1687183567207"  alt="Image one" />}
                 itemTwo={<ReactCompareSliderImage src="https://ik.imagekit.io/uti9laa1e/bg-removal-updated-new_c6AqAKAkuO?updatedAt=1687183627404"  alt="Image two" />}
-                className="flex sm:w-[600px] mt-5 rounded-3xl sm:ml-5 ml-5"
+                className="sm:w-[600px] h-[500px] mt-5 rounded-3xl sm:ml-5 ml-5"
               />
 
                 {/* <h2 className="mb-1 font-medium text-lg">Original Photo</h2> */}

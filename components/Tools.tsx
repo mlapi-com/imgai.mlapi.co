@@ -13,8 +13,15 @@ export default function Tools(){
                     <div className="grid sm:grid-cols-3 mt-10 gap-10">
                         
                         
-                        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700">
-                            <img src="https://ik.imagekit.io/uti9laa1e/tools-enhancement1.png?updatedAt=1687183724987" alt="Tools enhancement" className='rounded-2xl w-full h-72 sm:h-72' />
+                        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 flex items-center justify-center flex-col">
+                            {/* <img src="https://ik.imagekit.io/uti9laa1e/tools-enhancement1.png?updatedAt=1687183724987" alt="Tools enhancement" className='rounded-2xl w-full h-72 sm:h-72' /> */}
+                            
+                            <ReactCompareSlider
+                                itemOne={<ReactCompareSliderImage src="https://ik.imagekit.io/uti9laa1e/oldman.jpg?updatedAt=1687143049080"  alt="Image one" />}
+                                itemTwo={<ReactCompareSliderImage src="https://ik.imagekit.io/uti9laa1e/oldman-new.jpg?updatedAt=1687143051022"  alt="Image two" />}
+                                className="sm:w-[300px] h-[300px] rounded-3xl"
+                            />
+
                             <a>
                                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 mt-5">Image Enhancement</h5>
                             </a>
@@ -25,8 +32,15 @@ export default function Tools(){
                             </a>
                         </div>
 
-                        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700">
-                            <img src="https://ik.imagekit.io/uti9laa1e/bg-removal-updated-new_c6AqAKAkuO?updatedAt=1687183627404" alt="Tools enhancement" className='rounded-2xl w-full h-72 sm:h-72' />
+                        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 flex items-center justify-center flex-col">
+                            {/* <img src="https://ik.imagekit.io/uti9laa1e/bg-removal-updated-new_c6AqAKAkuO?updatedAt=1687183627404" alt="Tools enhancement" className='rounded-2xl w-full h-72 sm:h-72' /> */}
+                            
+                            <ReactCompareSlider
+                                itemOne={<ReactCompareSliderImage src="https://ik.imagekit.io/uti9laa1e/iu.jpeg?updatedAt=1687205729169"  alt="Image one" />}
+                                itemTwo={<ReactCompareSliderImage src="https://ik.imagekit.io/uti9laa1e/iu-new.jpeg?updatedAt=1687205729370"  alt="Image two" />}
+                                className="sm:w-[300px] h-[300px] rounded-3xl"
+                            /> 
+                            
                             <a>
                                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 mt-5">Image Background Removal</h5>
                             </a>
@@ -37,8 +51,14 @@ export default function Tools(){
                             </a>
                         </div>
 
-                        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 ">
-                            <img src="https://ik.imagekit.io/uti9laa1e/tools-restore-old.png?updatedAt=1687184008283" alt="Tools enhancement" className='rounded-2xl' />
+                        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 flex items-center justify-center flex-col">
+                            {/* <img src="https://ik.imagekit.io/uti9laa1e/tools-restore-old.png?updatedAt=1687184008283" alt="Tools enhancement" className='rounded-2xl' /> */}
+                            
+                            <ReactCompareSlider
+                                itemOne={<ReactCompareSliderImage src="https://ik.imagekit.io/uti9laa1e/michael.jpg?updatedAt=1687206356232"  alt="Image one" />}
+                                itemTwo={<ReactCompareSliderImage src="https://ik.imagekit.io/uti9laa1e/michael-new.jpg?updatedAt=1687206356474"  alt="Image two" />}
+                                className="sm:w-[300px] h-[300px] rounded-3xl"
+                            />
                             <a>
                                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 mt-12">Restore Old photos</h5>
                             </a>
@@ -53,7 +73,7 @@ export default function Tools(){
 
                     {/* <div className="grid sm:grid-cols-2 mt-10 gap-10">
                         
-                        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700">
+                        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 flex items-center justify-center flex-col">
                             <img src="https://ik.imagekit.io/uti9laa1e/cartoon.jpg?updatedAt=1687192720786" alt="Tools enhancement" className='rounded-2xl w-full sm:h-[320px]' />
                             <a>
                                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 mt-5">Cartoonify Image</h5>
@@ -65,7 +85,7 @@ export default function Tools(){
                             </a>
                         </div>
 
-                        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 ">
+                        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 flex items-center justify-center flex-col">
                             <img src="https://raw.githubusercontent.com/senya-ashukha/senya-ashukha.github.io/master/projects/lama_21/gif_for_lightning_v1_white.gif" alt="Tools enhancement" />
                             <a>
                                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 mt-12">Object Removal</h5>
@@ -77,7 +97,7 @@ export default function Tools(){
                             </a>
                         </div>
 
-                        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 ">
+                        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700 flex items-center justify-center flex-col">
                             <img src="https://ik.imagekit.io/uti9laa1e/tools-restore-old.png?updatedAt=1687184008283" alt="Tools enhancement" className='rounded-2xl' />
                             <a>
                                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 mt-12">Restore Old photos</h5>
