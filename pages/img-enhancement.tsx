@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import Link from "next/link";
+import Processing from "../components/Processing"
 
 export default function ImgEnhancement(){
     return (
@@ -25,7 +26,7 @@ export default function ImgEnhancement(){
 
                 <Link
                     className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
-                    href="/processing"
+                    href="/img-enhancement/#processing"
                 >
                     Enhance Now
                 </Link>
@@ -40,13 +41,19 @@ export default function ImgEnhancement(){
                 </Link>
 
             </div>
+
                 <ReactCompareSlider
                     itemOne={<ReactCompareSliderImage src="https://ik.imagekit.io/uti9laa1e/oldman.jpg?updatedAt=1687143049080"  alt="Image one" />}
                     itemTwo={<ReactCompareSliderImage src="https://ik.imagekit.io/uti9laa1e/oldman-new.jpg?updatedAt=1687143051022"  alt="Image two" />}
                     className="flex sm:w-[600px] h-[400px] rounded-3xl sm:mt-20 mt-10 "
-              /> 
+                />
+
+            
+
 
             </main>
+
+            <Processing />
         </div>
     )
 } 
