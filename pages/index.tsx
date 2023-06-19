@@ -5,6 +5,9 @@ import Head from "next/head";
 import Link from "next/link";
 import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
+import Image from 'next/image';
+
+const Testimonials = lazy(() => import('../components/Testimonials'));
 
 const Tools = lazy(() => import('../components/Tools'));
 
@@ -77,7 +80,7 @@ const Home: NextPage = () => {
             Explore all Tools
           </Link>
         </div>
-        <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
+        {/* <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
           <div className="flex flex-col space-y-10 mt-4 mb-16">
             <div className="flex sm:space-x-2 sm:flex-row flex-col">
               <div>
@@ -88,40 +91,70 @@ const Home: NextPage = () => {
                 className="sm:w-[600px] h-[500px] mt-5 rounded-3xl sm:ml-5 ml-5"
               />
 
-                {/* <h2 className="mb-1 font-medium text-lg">Original Photo</h2> */}
-                {/* <Image
-                  alt="Original photo of my bro"
-                  src="https://online.hitpaw.com/videos/photo-enhancer/toubu.png"
-                  className="rounded-2xl relative"
-                  width={800}
-                  height={600}
-                /> */}
+                
 
-                {/* <video 
+                <video 
                   className="lozad rounded-2xl min-w-full h-auto flex justify-center items-center" 
                   data-poster="https://online.hitpaw.com/images/online-tools-land/photo-enhancer/losing.png" 
                   autoPlay muted loop webkit-playsinline playsInline 
                   poster="https://online.hitpaw.com/images/online-tools-land/photo-enhancer/losing.png" 
                   data-loaded="true">
                     <source data-src="https://online.hitpaw.com/videos/photo-enhancer/losing.mp4" type="video/mp4" src="https://online.hitpaw.com/videos/photo-enhancer/losing.mp4"/>
-                </video> */}
+                </video>
                 
               </div>
-              {/* <div className="sm:mt-0 mt-8">
-                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
-                <Image
-                  alt="Restored photo of my bro"
-                  width={400}
-                  height={400}
-                  src="/michael-new.jpg"
-                  className="w-96 h-96 rounded-2xl sm:mt-0 mt-2"
-                />
-              </div> */}
+              
+                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                  <Image
+                    alt="Original photo of my bro"
+                    src="https://ik.imagekit.io/uti9laa1e/bg-removal-updated-old_QW2tI8Fti?updatedAt=1687183567207"
+                    className="rounded-2xl relative"
+                    width={400}
+                    height={400}
+                  />
+
+                  <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+                  <Image
+                    alt="Restored photo of my bro"
+                    width={400}
+                    height={400}
+                    src="https://ik.imagekit.io/uti9laa1e/bg-removal-updated-new_c6AqAKAkuO?updatedAt=1687183627404"
+                    className="w-96 h-96 rounded-2xl sm:mt-0 mt-2"
+                  />
+              
             </div>
           </div>
-        </div>
+        </div> */}
+
+        <div className="flex justify-between items-center w-full flex-col sm:mt-14 mt-6">
+          <div className="flex flex-col space-y-10 mt-4 mb-16">
+            <div className="flex sm:space-x-2 sm:flex-row flex-col">
+              <div>
+                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                <Image
+                  alt="photo from internet"
+                  src="https://ik.imagekit.io/uti9laa1e/bg-removal-updated-old_QW2tI8Fti?updatedAt=1687183567207"
+                  className="w-96 h-96 rounded-2xl sm:mt-4 mt-4"
+                  width={400}
+                  height={400}
+                />
+              </div>
+              <div className="sm:mt-0 mt-8">
+                <h2 className="mb-1 font-medium text-lg">Background Removed Photo</h2>
+                <Image
+                  alt="background removed"
+                  width={400}
+                  height={400}
+                  src="https://ik.imagekit.io/uti9laa1e/bg-removal-updated-new_c6AqAKAkuO?updatedAt=1687183627404"
+                  className="w-96 h-96 rounded-2xl sm:mt-4 mt-4"
+                />
+              </div>
+            </div>
+          </div>
+          </div>
       </main>
       <Tools />
+      <Testimonials />
     </div>
   );
 };

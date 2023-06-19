@@ -2,6 +2,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["upcdn.io", "replicate.delivery", "online.hitpaw.com"],
+    domains: ["upcdn.io", "replicate.delivery", "online.hitpaw.com", "ik.imagekit.io"],
   },
 };
