@@ -1,7 +1,7 @@
 import React, { ErrorInfo, ReactNode } from 'react';
 
 interface ErrorBoundaryProps {
-  fallback: ReactNode;
+  fallback?: ReactNode;
   children: ReactNode;
 }
 
@@ -25,7 +25,17 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
 
   render(): ReactNode {
     if (this.state.hasError) {
-      return this.props.fallback;
+      return (
+        <div className='Flex items-center justify-center'>
+          <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold tracking-normal text-slate-900 sm:text-6xl mb-5">
+            Error occurred while image processing</h1>
+          <button 
+            className='items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white'
+            onClick={() => window.location.reload()}>
+              Try Again
+          </button>
+        </div>
+      );
     }
     return this.props.children;
   }
