@@ -86,6 +86,7 @@ const Home: React.FC<HomeProps> = ({ versionID, processingText }) => {
       });
 
       let newPhoto = await res.json();
+      console.log("responsePhoto url or error is: ", newPhoto);
       if (res.status !== 200) {
         setError(newPhoto);
       } else {
