@@ -78,7 +78,7 @@ export default async function handler(
       restoredImage = jsonFinalResponse.output[0].image;
       console.log("restored output: ", restoredImage);
     } else if (jsonFinalResponse.status === "failed") {
-      break;
+      restoredImage = imageUrl;
     } else {
       await new Promise((resolve) => setTimeout(resolve, 1000));
     }
