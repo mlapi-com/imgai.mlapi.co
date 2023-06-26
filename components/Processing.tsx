@@ -194,7 +194,7 @@ const Home: React.FC<HomeProps> = ({ versionID, processingText }) => {
                     }}
                     className="bg-white rounded-full text-black border font-medium px-4 py-2 mt-8 hover:bg-gray-100 transition"
                   >
-                    Download {processingText} Photo
+                    Download Photo
                   </button>
                 )}
               </div>
