@@ -7,9 +7,8 @@ import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
 import Image from 'next/image';
 
-const Testimonials = lazy(() => import('../components/Testimonials'));
-
 const Tools = lazy(() => import('../components/Tools'));
+
 
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 
@@ -154,7 +153,6 @@ const Home: NextPage = () => {
           </div>
       </main>
       <Tools />
-      <Testimonials />
     </div>
   );
 };
