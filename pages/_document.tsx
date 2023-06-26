@@ -8,27 +8,28 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
-            content="Restore your old face photos and keep the memories alive."
+            content="Free AI Powered Image Processing Tools"
           />
-          <meta property="og:site_name" content="restorePhotos.io" />
+          <meta property="og:site_name" content="imgai.co" />
           <meta
             property="og:description"
-            content="Restore your old face photos and keep the memories alive."
+            content="Free AI Powered Image Processing Tools."
           />
-          <meta property="og:title" content="Face Photo Restorer" />
+          <meta property="og:title" content="Free AI Powered Image Processing Tools" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Face Photo Restorer" />
+          <meta name="twitter:title" content="Free AI Powered Image Processing Tools" />
           <meta
             name="twitter:description"
-            content="Restore your old photos and keep the memories alive."
+            content="Free AI Powered Image Processing Tools"
           />
+          {/* Add Image here for a preview */}
           <meta
             property="og:image"
-            content="https://restore-photos.vercel.app/og-image.png"
+            content="https://ik.imagekit.io/uti9laa1e/Screenshot_from_2023-06-27_02.56.54.png?updatedAt=1687814880001"
           />
           <meta
             name="twitter:image"
-            content="https://restore-photos.vercel.app/og-image.png"
+            content="https://ik.imagekit.io/uti9laa1e/Screenshot_from_2023-06-27_02.56.54.png?updatedAt=1687814880001"
           />
 
           {/* For Tally: https://tally.so/forms/mDKWKE/share */}
