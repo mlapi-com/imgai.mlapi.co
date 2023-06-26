@@ -17,7 +17,7 @@ export default function ImgEnhancement(){
 
             <main className="flex flex-1 px-4 mt-4 sm:mb-0 mb-8 sm:flex-row flex-col max-w-6xl">
             
-            <div className="flex flex-col justify-center items-center">
+            <div>
 
             <h1 className="mb-4 text-3xl font-extrabold text-gray-900 sm:mt-40 mt-10 md:text-5xl lg:text-6xl">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r bg-lime-500 from-sky-400">Image Enhacement</span> Free to use.</h1>
@@ -25,20 +25,20 @@ export default function ImgEnhancement(){
                 <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Enhancement your image upto 4x or 8x in seconds.</p>
 
                 <Link
-                    className=" items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
+                    className="items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-black border-2 border-black duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
                     href="/img-enhancement/#processing"
                 >
                     Enhance Now
                 </Link>
 
-                {/* <Link
+                <Link
                     className="sm:ml-10 ml-5 items-center mt-7 justify-center font-medium rounded-xl focus-visible:outline-black focus:outline-none inline-flex bg-blue-500 border-2 duration-200 focus-visible:ring-black hover:bg-transparent hover:border-black hover:text-black lg:w-auto px-6 py-3 text-center text-white"
                     href="#Tools"
                     data-tally-open="mDKWKE" data-tally-layout="modal" data-tally-align-left="1" data-tally-width="450"
                     data-tally-hide-title="1" data-tally-emoji-text="👋" data-tally-emoji-animation="head-shake" data-tally-auto-close="5000"
                 >
                     Contact Us
-                </Link> */}
+                </Link>
 
             </div>
 
