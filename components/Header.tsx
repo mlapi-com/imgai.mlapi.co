@@ -18,7 +18,10 @@ export default function Header() {
           <div className="flex flex-row items-center justify-between lg:justify-start">
           <Link href="/" className="flex space-x-2">
             <h1 className="sm:text-4xl text-4xl font-bold  tracking-tight">
-              imgai
+            imgai &nbsp;
+            <sup >
+              <small className="text-base">Beta</small>
+            </sup>
             </h1>
           </Link>
 
