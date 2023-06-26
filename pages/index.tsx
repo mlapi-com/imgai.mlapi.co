@@ -134,7 +134,7 @@ const Home: NextPage = () => {
                 <Image
                   alt="photo from internet"
                   src="https://ik.imagekit.io/uti9laa1e/bg-removal-updated-old_QW2tI8Fti?updatedAt=1687183567207"
-                  className="w-96 h-96 rounded-2xl sm:mt-4 mt-4"
+                  className="w-96 h-96 rounded-2xl sm:mt-4 mt-4 mx-auto"
                   width={400}
                   height={400}
                 />

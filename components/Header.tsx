@@ -9,7 +9,7 @@ export default function Header() {
   }
 
   return (
-    <header className="flex justify-between items-center w-full mt-5 sm:px-4 px-2">
+    <header className="grid justify-items-center w-full mt-5 mx-auto">
       <div className="w-full mx-auto md:px-12 px-8 max-w-7xl lg:px-16">
         <div
           x-data="{ open: false }"
