@@ -62,7 +62,7 @@ const Home: NextPage = () => {
           Elevate your visuals effortlessly. Unleash the artistry within. 
           Transform images with a few clicks.
         </p>
-        <div className="flex justify-center space-x-4 sm:ml-5 ml-5">
+        <div className="flex justify-center space-x-4">
           
           
 
