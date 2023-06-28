@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -10,13 +11,21 @@ export default function Header() {
 
   return (
     <header className="grid justify-items-center w-full mt-5 mx-auto">
-      <div className="w-full mx-auto md:px-12 px-8 max-w-7xl lg:px-16">
+      <div className="w-full mx-auto md:px-12 px-8 max-w-full">
         <div
           x-data="{ open: false }"
           className="relative flex flex-col w-full pt-2 mx-auto bg-white md:items-center md:justify-between md:flex-row md:px-6"
         >
           <div className="flex flex-row items-center justify-between lg:justify-start">
           <Link href="/" className="flex space-x-2">
+
+            <Image
+              alt="header text"
+              src="/favicon.svg"
+              className="sm:w-12 sm:h-12 w-10 h-10"
+              width={25}
+              height={25}
+          />
             <h1 className="sm:text-4xl text-4xl font-bold  tracking-tight">
             imgai &nbsp;
             <sup >

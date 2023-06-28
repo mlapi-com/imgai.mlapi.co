@@ -10,7 +10,7 @@ export default function ImgEnhancement(){
         <div className="flex mx-auto flex-col items-center justify-center py-2 min-h-screen">
             <Head>
             <title>Restore Photos | imgai</title>
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="svg" href="/favicon.svg" />
             </Head>
     
             <Header />

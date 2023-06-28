@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="svg" href="/favicon.svg" />
           <meta
             name="description"
             content="Free AI Powered Image Processing Tools"
