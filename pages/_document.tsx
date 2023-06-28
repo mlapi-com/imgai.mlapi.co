@@ -36,7 +36,7 @@ class MyDocument extends Document {
           <script async src="https://tally.so/widgets/embed.js"></script>
 
         </Head>
-        <body className="flex flex-col items-center justify-center w-full ml-3">
+        <body className="flex flex-col items-center justify-center w-full ml-3 bg-[#fffdf9]">
           <Main />
           <NextScript />
         </body>
