@@ -3,7 +3,7 @@ import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slide
 export default function Tools(){
     return (
         <section
-            id='Tools' className="pt-10 pb-10"
+            id='Tools' className="pt-10 pb-10 "
         >
             <div className="mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="mx-auto md:text-center">
