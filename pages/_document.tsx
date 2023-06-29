@@ -1,4 +1,8 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
+// Importing the Google Analytics Measurement ID from the environment variable
+const gtag = `https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`;
+
+const isProd = process.env.NODE_ENV === "production";
 
 class MyDocument extends Document {
   render() {
@@ -34,6 +38,27 @@ class MyDocument extends Document {
 
           {/* For Tally: https://tally.so/forms/mDKWKE/share */}
           <script async src="https://tally.so/widgets/embed.js"></script>
+
+          {isProd && (
+            <>
+
+              {/* Google Analytics Measurement ID*/}
+              <script async src={gtag} />
+              {/* {/ Inject the GA tracking code with the Measurement ID /} */}
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
+                      page_path: window.location.pathname
+                    });
+                  `,
+                }}
+              />
+            </>
+          )};
 
         </Head>
         <body className="flex flex-col items-center justify-center w-full ml-3 bg-[#fbf8f4] ">
