@@ -58,7 +58,7 @@ class MyDocument extends Document {
                 }}
               />
             </>
-          )};
+          )}
 
         </Head>
         <body className="flex flex-col items-center justify-center w-full ml-3 bg-[#fbf8f4] ">
