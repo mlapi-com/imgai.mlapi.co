@@ -23,7 +23,6 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-16 mt-10">
         <a
           href="https://twitter.com/rahul_jalindar/status/1674156276920483840"
