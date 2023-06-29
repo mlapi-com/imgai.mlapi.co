@@ -85,10 +85,12 @@ export default function Header() {
             
             <a
               className="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400"
-              href="/changlog"
+              href="https://rahul-kadam.notion.site/imgai-Changelog-d67b4c5912474714be219ba9d2778091"
+              target="_blank" rel="noopener noreferrer"
             >
-              Changlog
+              Changelog
             </a>
+
 
 
             <div className="inline-flex items-center gap-2 list-none lg:ml-auto">

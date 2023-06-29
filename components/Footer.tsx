@@ -26,7 +26,7 @@ export default function Footer() {
                             <a href="#" className="mr-4 hover:underline md:mr-6 ">Licensing</a>
                         </li>
                         <li>
-                            <a href="#" className="hover:underline">Changlog</a>
+                            <a href="https://rahul-kadam.notion.site/imgai-Changelog-d67b4c5912474714be219ba9d2778091" className="hover:underline">Changelog</a>
                         </li>
                     </ul>
                 </div>
