@@ -58,7 +58,7 @@ const Home: NextPage = () => {
           
         </h1>
 
-        <p className="mx-auto sm:mt-12 mt-5 max-w-xl text-lg text-slate-700 leading-7">
+        <p className="mx-auto sm:mt-5 mt-5 max-w-xl text-lg text-slate-700 leading-7">
           Elevate your visuals effortlessly. Unleash the artistry within. 
           Transform images with a few clicks.
         </p>
